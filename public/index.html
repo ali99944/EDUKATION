@@ -37,7 +37,7 @@
           appId      : '3218594211725270',
           cookie     : true,
           xfbml      : true,
-          version    : 'v2.6'
+          version    : 'v15.0'
         });
       
         FB.AppEvents.logPageView();
@@ -69,12 +69,12 @@
  
   </head>
   <body>
+  <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ar_AR/sdk.js#xfbml=1&version=v15.0&appId=3218594211725270&autoLogAppEvents=1" nonce="ZHs7isCo"></script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <fb:login-button
-      scope="public_profile,email"
-      onlogin="checkLoginState();">
-      login with facebook
-    </fb:login-button>
+  <div class="fb-login-button" data-width="" data-size="medium" data-button-type="login_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false">
+    login with facebook
+  </div>
     <div id="root"></div>
     <!--
       This HTML file is a template.
