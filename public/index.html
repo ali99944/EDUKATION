@@ -57,9 +57,12 @@
 
       function checkLoginState() {
         FB.getLoginStatus(function(response) {
-          console.log(response)
           statusChangeCallback(response);
         });
+      }
+      
+      function statusChangeCallback(response){
+        console.log(response)
       }
     </script>
   
